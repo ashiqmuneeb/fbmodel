@@ -59,6 +59,7 @@ body {
 .sub-btn:hover {
     background: red;
 }
+
 .left-section {
     width: 50%;
     float:left;
@@ -69,6 +70,7 @@ body {
     float: right;
     padding-right: 30px;
 }
+
 .main-body {
     background: rgb(123, 120, 120);
     background: linear-gradient(90deg, rgba(124, 132, 147, 0.578) 0%, rgba(227, 230, 235, 0.578) 35%, rgb(227, 230, 235, 0.578) 100%, rgba(227,230,235,0.578) 100%);
@@ -77,7 +79,7 @@ body {
 }
 
 .image {
-    width: 50%;
+    width: 100%;
     float: none;
 }
 
@@ -89,3 +91,11 @@ body {
 h1 {
     font-style: bold;
 }
+.footer{
+    background-color: #4267b2;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: double;
+}
+
+
+
