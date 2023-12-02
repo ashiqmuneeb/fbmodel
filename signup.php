@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -49,10 +49,10 @@
                 <input  id="text1" type="text" name="fname" placeholder="First name">
                 <input id="text2" type="text" name="lname" placeholder="Last name"><br><br>
                 <input id="number" type="email" name="email" placeholder="Mobile Number or Email"><br><br>
-                <input class="input__field" id="password" type="password" name="password" placeholder="New Password">
+                <input class="input__field" id="password" type="password" name="password" placeholder="New Password"><br><br>
                
 
-                <label><b>Birthday:</b></label><br><br>
+                <label><b>Birthday:</b></label><br>
                 <select name="day" class="date">
                     <option value="">Day</option>
                 </select> 
@@ -77,6 +77,9 @@
     
     </div>
     </div>
+    <div class="footer">
+        <p>Facebook is a social networking site that makes it easy for you to connect and share with family and friends online. Originally designed for college students, Facebook was created in 2004 by Mark Zuckerberg while he was enrolled at Harvard University</p>
+</div>
 
     </div>
 
@@ -102,7 +105,7 @@ if (isset($_POST["submit"])) {
     $year = $_POST["year"];
     $gender = isset($_POST["gender"]) ? $_POST["gender"] : "";
 
-    // Combine the day, month, and year into a single date string
+    
     $date = $year . "-" . $month . "-" . $day;
 
     $sql = "INSERT INTO `logindetails` (`id`, `fname`, `lname`, `number/email`, `DOB`, `gender`) VALUES (NULL, '$fname', '$lname', '$number', '$date', '$gender')";
